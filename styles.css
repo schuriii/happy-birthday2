@@ -94,15 +94,16 @@ h3 {
 }
 
 .card {
-  border: 1px solid #555;
-  padding: 6px;
   width: 100px;
-  height: 100px;
+  height: 110px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #222;
-  text-align: center; 
+  text-align: center;
+  border: 1px solid #555;
+  overflow: hidden;
 }
 
 .card.empty {
@@ -169,5 +170,6 @@ h3 {
 
 #winText {
   transform: translateY(-40px);
+
 
 }
