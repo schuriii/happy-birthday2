@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini TFT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="augmentScreen" class="augment-overlay">
+  <h2>Choose an Augment</h2>
+  <div class="augment-options" id="augmentOptions"></div>
+</div>
+
+<div id="winScreen" class="augment-overlay" style="display:none;">
+  <h2 id="winText">YOU WIN !!!1! HAPPY BIRTHDAY !!!11!!</h2>
+
+  <video id="winVideo" width="720">
+    <source src="assets/hbdvid.mp4" type="video/mp4">
+  </video>
+
+  <br>
+  <button onclick="closeWin()">OK</button>
+</div>
+
+<div class="game">
+
+  <div class="panel traits">
+    <h3>Traits</h3>
+    <div id="traits"></div>
+  </div>
+
+
+  <div class="panel board">
+    <h3 class="center">Board</h3>
+    <div class="board-units" id="board"></div>
+    <div class="fight">
+      <button onclick="fight()">Fight Round</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3 class="center">Bench</h3>
+    <div class="bench-units" id="bench"></div>
+  </div>
+
+  <div class="panel">
+    <div class="shop-top" id="gold"></div>
+
+    <div class="shop-content">
+      <div class="shop-controls">
+        <div id="unitCap"></div>
+        <button onclick="reroll()">Reroll (2g)</button>
+      </div>
+
+      <div class="shop-units" id="shop"></div>
+    </div>
+  </div>
+
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="assets/hbd.mp3" type="audio/mpeg">
+</audio>
+
+<script src="games.js"></script>
+</body>
+</html>

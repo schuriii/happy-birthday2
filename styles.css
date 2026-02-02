@@ -1,0 +1,173 @@
+body {
+  font-family: sans-serif;
+  background: #0f0f0f;
+  color: #eee;
+  padding: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+h3 {
+  margin: 4px 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 12px;
+  height: 90vh;
+}
+
+.panel {
+  border: 1px solid #333;
+  padding: 6px;
+  background: #1b1b1b;
+}
+
+.traits {
+  grid-row: 1 / span 3;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 360px;
+}
+
+.board-units {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.bench-units {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 8px;
+  transform: translateX(12px);
+    justify-content: center;
+  min-height: 108px;
+}
+
+.shop-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.shop-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transform: translateX(-50px);
+}
+
+.shop-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  transform: translate(-160px, -10px);
+}
+
+.shop-units {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  min-height: 100px;
+
+}
+
+.card {
+  border: 1px solid #555;
+  padding: 6px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #222;
+  text-align: center; 
+}
+
+.card.empty {
+  border: 1px dashed #444;
+  color: #555;
+}
+
+.card small {
+  color: #aaa;
+}
+
+.trait {
+  color: #777;
+}
+
+.trait.active {
+  color: #4cff4c;
+  font-weight: bold;
+}
+
+.fight {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.augment-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.augment-options {
+  display: flex;
+  gap: 20px;
+}
+
+.augment {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #555;
+  background: #1b1b1b;
+  text-align: center;
+  cursor: pointer;
+}
+
+.augment:hover {
+  border-color: gold;
+}
+
+#winScreen video {
+  width: 400vw;
+  max-width: 900px;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+  transform: translateY(-40px);
+}
+
+#winText {
+  transform: translateY(-40px);
+
+}
